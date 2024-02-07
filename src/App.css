@@ -161,6 +161,7 @@ body {
 @media screen and (max-width: 993px) {
   body {
     font-size: 34px;
+    display: block;
   }
   #root {
     width: 100%;
@@ -180,6 +181,27 @@ body {
   }
   .doubleArrowToLeft {
     transform: rotate(0deg);
+  }
+}
+@media screen and (max-width: 562px) {
+  .blockWithArrows {
+    justify-content: space-around;
+  }
+  .arrowButton {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .blockWithArrows {
+    justify-content: space-around;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5% 1fr;
+  }
+  .arrowButton {
+    height: 40px;
+    width: 40px;
   }
 }
 
