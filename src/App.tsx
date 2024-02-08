@@ -36,7 +36,6 @@ function App() {
         setRightCities(right)
     }, []);
 
-
     return (
         <div className="section">
             <div className="wrapper">

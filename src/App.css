@@ -160,7 +160,7 @@ body {
 }
 @media screen and (max-width: 993px) {
   body {
-    font-size: 34px;
+    font-size: 1em;
     display: block;
   }
   #root {
@@ -168,7 +168,11 @@ body {
   }
   .wrapper {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10% 1fr;
+    grid-template-rows: 1fr 5% 1fr;
+  }
+  .arrowButton {
+    height: 50px;
+    width: 60px;
   }
   .arrowToRight {
     transform: rotate(90deg);
@@ -192,6 +196,9 @@ body {
   }
 }
 @media screen and (max-width: 428px) {
+  .wrapper {
+    gap: 15px;
+  }
   .blockWithArrows {
     justify-content: space-around;
   }

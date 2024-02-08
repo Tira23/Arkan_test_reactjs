@@ -53,6 +53,7 @@ export function moveLiA2B(citiesA: ICities[], citiesB: ICities[], obj?: options)
         switch (obj.direction) {
             case "toLeft":
                 _curCities = _curCities.map(city => {
+                    city.id++
                     city.isChose = false
                     city.isLeft = true
                     return city
@@ -60,11 +61,11 @@ export function moveLiA2B(citiesA: ICities[], citiesB: ICities[], obj?: options)
                 break;
             case "toRight":
                 _curCities = _curCities.map(city => {
+                    city.id++
                     city.isChose = false
                     city.isLeft = false
                     return city
                 })
-                console.log(_curCities);
                 break;
             default: break;
         }
