@@ -1,7 +1,7 @@
 import {ICities} from "../../interface";
 import {useState} from "react";
-import {toggleChoseCity} from "../../utils/cities";
 import {Li} from "../../ui/li/Li";
+import {toggleChoseCity} from "../../utils/helpers";
 
 interface IProps {
     city: ICities

@@ -1,6 +1,6 @@
 import {ICities} from "../interface";
 import {cities} from "./constants";
-import {getRandomInt} from "./helpers";
+import {getRandomInt, toggleIsLeft} from "./helpers";
 
 export function getAllCities() {
     // выбираю из всех городов 10
@@ -27,20 +27,8 @@ export function distributeElementsToArrays(allCities: ICities[]) {
     return [leftBlockArray, rightBlockArray]
 }
 
-// меняет значение isChose на выбранном городе
-export function toggleChoseCity(city: ICities) {
-    city.isChose = !city.isChose
-}
 
-// функция, которая указывает какие города необходимо перенести
-export function toggleIsLeft(city: ICities) {
-    if (city.isChose) {
-        city.isLeft = !city.isLeft
-        city.isChose = false
-        return true
-    }
-    return false
-}
+
 interface options{
     all: boolean,
     direction: 'toRight' | 'toLeft'
